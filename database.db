@@ -1,0 +1,16 @@
+members(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT UNIQUE
+)
+
+contributions(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    member_id INTEGER,
+    month TEXT,
+    year INTEGER,
+    attendance REAL,
+    society REAL,
+    uwaka REAL,
+    wawata REAL,
+    construction REAL
+)
